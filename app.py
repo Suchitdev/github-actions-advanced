@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Version 8"
+    return """
     <html>
     <head>
         <title>DevOps CI/CD Pipeline</title>
@@ -48,9 +48,7 @@ def home():
     </head>
 
     <body>
-
         <div class="card">
-
             <h1>🚀 DevOps CI/CD Pipeline</h1>
 
             <h2>GitHub Actions + Docker + Kubernetes</h2>
@@ -72,9 +70,7 @@ def home():
             <div class="footer">
                 Automated CI/CD Workflow using GitHub Actions
             </div>
-
         </div>
-
     </body>
     </html>
     """
